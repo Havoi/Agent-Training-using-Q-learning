@@ -136,7 +136,7 @@ out.write(frame_bgr)
 
 - Adds text overlays (Episode number and current Q Score) on each video frame.
 - Writes the annotated frame to the output video file.
-[Click here to watch the training video](path/to/your/video.mp4)
+[Click here to watch the training video](cartpole_training_gymnasium.mp4)
 
 ---
 
@@ -177,7 +177,13 @@ plt.show()
 ```
 
 
-- **Plot 1:** Visualizes the total reward the agent obtains per episode.
-![Training Graph](screenshot.png)
+- **Plot 1:** Visualizes the total reward the agent obtains per episode for 200 episodes.
+![Training Graph](output.png)
+
+- **Plot 2:** Visualizes the total reward the agent obtains per episode for 1000 episodes.
+![Training Graph](output_1000-episodes.png)
+
+![Rewards](image.png)
+
 
 
