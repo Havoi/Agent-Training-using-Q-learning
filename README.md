@@ -19,7 +19,7 @@ The training process is recorded in `cartpole_training_recorded.mp4`. Each frame
 Install the required libraries with:
 
 ```bash
-pip install gymnasium[box2d] numpy matplotlib opencv-python
+pip install gymnasium numpy matplotlib opencv-python
 ```
 ---
 
@@ -112,9 +112,9 @@ total_reward += reward
 
 - Applies the Bellman update rule:
   
-  \[
-  Q(s, a) \leftarrow Q(s, a) + \alpha \left( r + \gamma \cdot \max_a Q(s', a) - Q(s, a) \right)
-  \]
+```math
+Q(s, a) ← Q(s, a) + α × [ r + γ × max(Q(s', a')) - Q(s, a) ]
+```
   
 - Moves to the next state and accumulates the reward.
 
@@ -136,7 +136,8 @@ out.write(frame_bgr)
 
 - Adds text overlays (Episode number and current Q Score) on each video frame.
 - Writes the annotated frame to the output video file.
-[Click here to watch the training video](cartpole_training_gymnasium.mp4)
+-[Watch the Training Video on YouTube](https://youtu.be/AAURvpSYmcw)
+
 
 ---
 
